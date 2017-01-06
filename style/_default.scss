@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Lars';
+    src: url('../fonts/Lars-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lars';
+  src: url('../fonts/Lars-Regular.eot');
+  src: url('../fonts/Lars-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Lars-Regular.woff2') format('woff2'),
+       url('../fonts/Lars-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'LarsMono';
+  src: url('../fonts/Lars-Mono.eot');
+  src: url('../fonts/Lars-Mono.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Lars-Mono.woff2') format('woff2'),
+       url('../fonts/Lars-Mono.woff') format('woff');
+}
+
+@mixin larsMono {
+  font-family: 'LarsMono',Helvetica, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  font-smoothing: antialiased;
+}
+
+body {
+  font-family: 'Lars',Helvetica, Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  font-smoothing: antialiased;
+}
+
+html, body{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background: #fcf2f0;
+  font-size: 1.9vw;
+  line-height: 1.28;
+
+
+
+  @media only screen and (max-width: $firstbreakpoint) {
+    font-size: 3vw;
+
+  }
+
+  @media only screen and (max-width: 500px) {
+    font-size: 16px;
+  }
+}
