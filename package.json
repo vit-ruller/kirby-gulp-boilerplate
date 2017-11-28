@@ -31,8 +31,11 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
+    "babel-core": "^6.26.0",
+    "flickity": "^2.0.10",
     "lazysizes": "^4.0.1",
     "lodash": "^4.17.4",
+    "object-fit-images": "^3.2.3",
     "turbolinks": "^5.0.3"
   }
 }
